@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Press Start 2P", system-ui;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #151e3f;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	font-size: 1.6rem;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	width: 40rem;
+	justify-content: space-between;
+}
+
+.header__turn-wrapper {
+	color: #a7bec8;
+	height: 6rem;
+	width: 15rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5rem;
+	text-transform: uppercase;
+	background-color: #1e2d5c;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.header__turn {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.header__reset-btn {
+	border: none;
+	background: none;
+	height: 5rem;
+	width: 15rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5rem;
+	text-transform: uppercase;
+	background-color: #a7bec8;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.game__boxes {
+	display: grid;
+	grid-template-columns: repeat(3, 12rem);
+	grid-template-rows: repeat(3, 12rem);
+	gap: 2rem;
+}
+
+.game__box {
+	border-radius: 1.5rem;
+	border: none;
+	background-color: #1e2d5c;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	/* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+		rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+		rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
+	font-weight: bold;
+	font-size: 3.5rem;
+}
+
+.game__stats {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+}
+
+.game__stat {
+	height: 6rem;
+	width: 12rem;
+	border-radius: 1.5rem;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.game__stat--neon {
+	background-color: #08fead;
+}
+
+.game__stat--gray {
+	background-color: #a7bec8;
+}
+
+.game__stat--orange {
+	background-color: #fd5600;
+}
+
+.game__stat-title {
+	font-size: 1.2rem;
+}
+
+.game__stat-value {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.modal {
+	transform: translateX(-50%);
+	left: 50%;
+	padding: 3rem;
+	border-radius: 1.5rem;
+	background-color: #ffeaec;
+}
+
+.modal__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	text-transform: uppercase;
+}
+
+.modal__playerNumber {
+	font-weight: bold;
+	text-align: center;
+}
+
+.modal__player-win {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.modal__winner-type {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.modal__buttons {
+	display: flex;
+	gap: 2rem;
+}
+
+.modal__btn {
+	border: none;
+	background: none;
+	height: 5rem;
+	width: 15rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.modal__btn-new {
+	background-color: #fd5600;
+}
+
+.modal__btn-next {
+	background-color: #08fead;
+}

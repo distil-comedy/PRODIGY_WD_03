@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" href="globals.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<dialog class="modal">
+			<div class="modal__wrapper">
+				<h2 class="modal__playerNumber">Player 1</h2>
+				<p class="modal__player-win">
+					<span class="modal__winner-type">X</span> Won The Round
+				</p>
+				<div class="modal__buttons">
+					<button class="modal__btn modal__btn-new" type="button">
+						New Game
+					</button>
+					<button class="modal__btn modal__btn-next" type="button">
+						Next Round
+					</button>
+				</div>
+			</div>
+		</dialog>
+		<header class="header">
+			<div class="header__turn-wrapper">
+				<span class="header__turn">X</span>
+				Turn
+			</div>
+			<button class="header__reset-btn">Reset</button>
+		</header>
+		<main class="game">
+			<div class="game__boxes">
+				<button class="game__box" type="button"></button>
+				<button class="game__box" type="button"></button>
+				<button class="game__box" type="button"></button>
+				<button class="game__box" type="button"></button>
+				<button class="game__box" type="button"></button>
+				<button class="game__box" type="button"></button>
+				<button class="game__box" type="button"></button>
+				<button class="game__box" type="button"></button>
+				<button class="game__box" type="button"></button>
+			</div>
+			<div class="game__stats">
+				<div class="game__stat game__stat--neon">
+					<p class="game__stat-title">X (P1)</p>
+					<p class="game__stat-x">0</p>
+				</div>
+				<div class="game__stat game__stat--gray">
+					<p class="game__stat-title">Draw</p>
+					<p class="game__stat-draw">0</p>
+				</div>
+				<div class="game__stat game__stat--orange">
+					<p class="game__stat-title">O (P1)</p>
+					<p class="game__stat-o">0</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
